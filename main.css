@@ -19,7 +19,7 @@ a {
 nav {
   /* background-color: yellow; */
   width: 80%;
-  margin: 50px auto;
+  margin: 50px auto 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,4 +48,68 @@ a.active-pg {
   padding: 12px 25px;
   border: 2px solid #000000;
   border-radius: 6px;
+}
+
+.intro {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  /* gap: 70px; */
+  justify-content: space-between;
+}
+
+.left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.left .headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px 10px 30px;
+  gap: 69px;
+  background: #ACCF9F;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.headline-btn {
+  background: #1E1E1E;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 5px 15px;
+}
+
+h1 {
+  font-size: 45px;
+  color: #000000;
+}
+
+.welcome-intro {
+  line-height: 30px;
+  color: #4F4D4D;
+}
+
+.call-to-action a {
+  padding: 15px 50px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: wrap;
+  gap: 40px;
+}
+
+.right > div {
+  border: 2px solid #000000;
+  width: 45%;
 }
