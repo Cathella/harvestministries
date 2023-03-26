@@ -230,12 +230,13 @@ h4 {
   line-height: 30px;
 }
 
-.programs, .sermons {
+.programs, .sermons, .events {
   padding: 80px 0;
 }
 
 .programs .heading,
-.sermons .heading {
+.sermons .heading,
+.events .heading {
   text-align: center;
   margin: 0 0 70px 0;
 }
@@ -279,6 +280,7 @@ h4 {
   display: flex;
   gap: 30px;
   width: 47%;
+  align-items: center;
 }
 
 .sermon h4 {
@@ -318,4 +320,12 @@ h4 {
   gap: 10px;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.events h2 {
+  margin: 0 0 16px 0;
+}
+
+.events p {
+  line-height: 30px;
 }
