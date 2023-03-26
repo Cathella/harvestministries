@@ -192,7 +192,6 @@ h1 {
 .purpose {
   display: flex;
   gap: 40px;
-  /* align-items: center; */
 }
 
 .purpose .image {
@@ -231,7 +230,7 @@ h4 {
   line-height: 30px;
 }
 
-.programs, .sermons, .events, footer {
+.programs, .sermons, .events, footer, .involve {
   padding: 80px 0;
 }
 
@@ -252,7 +251,8 @@ h4 {
 
 .programs section,
 .sermons section,
-.events section {
+.events section,
+.involve section {
   display: flex;
   gap: 40px;
 }
@@ -260,6 +260,7 @@ h4 {
 .program {
   background: #F3FFEE;
   padding: 30px;
+  width: 30%;
 }
 
 .program h4 {
@@ -272,7 +273,8 @@ h4 {
   margin: 0 0 30px 0;
 }
 
-.sermons section {
+.sermons section,
+.programs section {
   flex-wrap: wrap;
 }
 
@@ -416,4 +418,28 @@ footer a {
   background: #FFFFFF;
   border-radius: 6px;
   color: #000000;
+}
+
+.involve {
+  background: #FFF2DD;
+}
+
+.involve section {
+  justify-content: center;
+  align-items: end;
+}
+
+.involve h2 {
+  width: 45%;
+}
+
+.involve a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 50px;
+  gap: 10px;
+  border: 2px solid #000000;
+  border-radius: 8px;
 }
