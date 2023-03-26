@@ -230,11 +230,12 @@ h4 {
   line-height: 30px;
 }
 
-.programs {
+.programs, .sermons {
   padding: 80px 0;
 }
 
-.programs .heading {
+.programs .heading,
+.sermons .heading {
   text-align: center;
   margin: 0 0 70px 0;
 }
@@ -247,14 +248,15 @@ h4 {
   border-radius: 3px;
 }
 
-.programs section {
+.programs section,
+.sermons section {
   display: flex;
   gap: 40px;
 }
 
 .program {
   background: #F3FFEE;
-  padding: 30px 30px;
+  padding: 30px;
 }
 
 .program h4 {
@@ -265,4 +267,55 @@ h4 {
   line-height: 30px;
   color: #000000;
   margin: 0 0 30px 0;
+}
+
+.sermons section {
+  flex-wrap: wrap;
+}
+
+.sermon {
+  background: #FFF2DD;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  width: 47%;
+}
+
+.sermon h4 {
+  margin: 0 0 16px 0;
+}
+
+.sermon-img {
+  width: 130px;
+  height: 136px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+
+.sermon .links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.watch-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 6px;
+}
+
+.listen-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  font-weight: bold;
 }
