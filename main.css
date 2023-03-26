@@ -16,9 +16,13 @@ a {
   text-decoration: none;
 }
 
+header {
+  padding: 30px 0 0 0;
+}
+
 nav {
   width: 80%;
-  margin: 30px auto 80px;
+  margin: 0 auto 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +114,14 @@ h1 {
   margin-bottom: 80px;
 }
 
+.right-programs {
+  width: 40%;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
 .right section {
   width: 45%;
   display: flex;
@@ -117,11 +129,39 @@ h1 {
   gap: 40px;
 }
 
+.right-programs div {
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 150px;
+  height: 200px;
+}
+
+.right-programs div.round {
+  width: 45%;
+}
+
+.right-programs div.pointed {
+  width: 45%;
+  border-radius: 150px 0px 150px 150px;
+}
+
 .right .groups {
   border: 2px solid #000000;
   border-radius: 150px 150px 150px 0px;
   height: 220px;
   position: relative;
+}
+
+.right .imgone {
+  border: 2px solid #000000;
+  border-radius: 150px 150px 0px 0px;
+  height: 300px;
+}
+
+.right .imgtwo {
+  border: 2px solid #000000;
+  border-radius: 0px 0px 150px 150px;
+  height: 180px;
 }
 
 .groups span {
@@ -139,6 +179,18 @@ h1 {
   border-radius: 0px 150px 150px 150px;
   height: 350px;
   position: relative;
+}
+
+.right .imgthree {
+  border: 2px solid #000000;
+  border-radius: 150px;
+  height: 250px;
+}
+
+.right .imgfour {
+  border: 2px solid #000000;
+  border-radius: 150px 0px 150px 150px;
+  height: 250px;
 }
 
 .overnights span {
@@ -406,6 +458,10 @@ footer a {
 
 .colored {
   color: #E0BB7C;
+}
+
+.coloredbg {
+  background: #FFF2DD;
 }
 
 .footer-btn {
