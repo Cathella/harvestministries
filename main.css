@@ -230,7 +230,7 @@ h4 {
   line-height: 30px;
 }
 
-.programs, .sermons, .events, footer, .involve {
+.programs, .sermons, .events, footer, .involve, .calendar {
   padding: 80px 0;
 }
 
@@ -442,4 +442,57 @@ footer a {
   gap: 10px;
   border: 2px solid #000000;
   border-radius: 8px;
+}
+
+.featured {
+  background: #F3FFEE;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 80px 0;
+}
+
+.top div {
+  display: flex;
+  gap: 30px;
+}
+
+.calendar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0 0 80px 0;
+}
+
+.weekly {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ttl {
+  font-family: 'Zilla Slab';
+  font-size: 25px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.evt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 16px;
+  gap: 10px;
+  background: #F3FFEE;
+  border-radius: 20px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
