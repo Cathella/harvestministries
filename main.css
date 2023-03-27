@@ -574,3 +574,21 @@ footer a {
 .greenbg {
   background-color: #F3FFEE;
 }
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.social-links a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 10px;
+  gap: 10px;
+  background: #ACCF9F;
+  border-radius: 6px;
+}
