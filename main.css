@@ -354,7 +354,8 @@ h4 {
 }
 
 .program h4 {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  font-size: 25px;
 }
 
 .program p {
@@ -685,6 +686,12 @@ footer a {
   }
 }
 
+@media screen and (max-width: 1471px) {
+  .event .support-btn{
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 1291px) {
   .intro, nav.desktop-nav, .container {
     width: 95%;
@@ -697,8 +704,37 @@ footer a {
   }
 }
 
+@media screen and (max-width: 978px) {
+  .programs section,
+  .sermons section {
+    flex-direction: column;
+  }
+
+  .program, .sermon {
+    width: 100%;
+  }
+
+  .events section {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .event-img {
+    width: 50%;
+    height: 200px;
+  } 
+
+  .event-link {
+    height: auto;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 933px) {
-  .intro {
+  .intro, .pnc {
     flex-direction: column;
   }
 
@@ -710,10 +746,6 @@ footer a {
   .right {
     display: none;
   }
-
-  .pnc {
-    flex-direction: column;
-  }  
 }
 
 @media screen and (max-width: 674px) {
@@ -736,4 +768,23 @@ footer a {
   .purpose .description {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 490px) {
+  .sermon {
+    flex-direction: column;
+  }
+
+  .sermon-details,
+  .sermon-img {
+    width: 100%;
+  }
+
+  .event {
+    flex-direction: column;
+  }
+
+  .event-img {
+    width: 90%;
+  } 
 }
