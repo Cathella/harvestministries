@@ -48,7 +48,12 @@ a.active-pg {
 }
 
 .contact-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 12px 25px;
+  gap: 10px;
   border: 2px solid #000000;
   border-radius: 6px;
 }
@@ -96,14 +101,17 @@ h1 {
   color: #4F4D4D;
 }
 
-.call-to-action a,
 .support-btn {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 15px 50px;
+  gap: 10px;
   background: #000000;
   border: 1px solid #000000;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .right {
@@ -325,6 +333,16 @@ h4 {
   margin: 0 0 30px 0;
 }
 
+.program-icon {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  background: #ACCF9F;
+  margin: 0 0 30px 0;
+}
+
 .sermons section,
 .programs section {
   flex-wrap: wrap;
@@ -361,7 +379,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 20px;
+  padding: 10px 20px;
   gap: 10px;
   font-weight: bold;
   border: 2px solid #000000;
@@ -551,4 +569,8 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.greenbg {
+  background-color: #F3FFEE;
 }
