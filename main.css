@@ -702,6 +702,16 @@ footer a {
   .right {
     width: 50%;
   }
+
+  footer section {
+    flex-wrap: wrap;
+  }
+
+  footer .about, 
+  footer .contact {
+    width: 45%;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 978px) {
@@ -768,6 +778,11 @@ footer a {
   .purpose .description {
     width: 100%;
   }
+
+  footer .about, 
+  footer .contact {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -786,5 +801,5 @@ footer a {
 
   .event-img {
     width: 90%;
-  } 
+  }
 }
