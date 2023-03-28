@@ -500,10 +500,6 @@ h4 {
   align-items: center;
 }
 
-.event-info {
-  /* width: 50%; */
-}
-
 .event h4 {
   margin: 0 0 16px 0;
   font-size: 25px;
@@ -714,6 +710,12 @@ footer a {
   }
 }
 
+@media screen and (max-width: 1053px) {
+  .right-programs {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 978px) {
   .programs section,
   .sermons section {
@@ -744,7 +746,7 @@ footer a {
 }
 
 @media screen and (max-width: 933px) {
-  .intro, .pnc {
+  .intro, .pnc, .involve section {
     flex-direction: column;
   }
 
@@ -753,8 +755,12 @@ footer a {
     margin-bottom: 50px;
   }
   
-  .right {
+  .right, .right-programs {
     display: none;
+  }
+
+  .involve h2 {
+    width: 100%;
   }
 }
 
