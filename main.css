@@ -53,7 +53,7 @@ nav a {
 }
 
 .logo img {
-  width: 80px;
+  width: 90px;
 }
 
 a.active-pg {
@@ -171,7 +171,7 @@ h1 {
   border-radius: 150px 150px 150px 0px;
   height: 220px;
   position: relative;
-  background-image: url(img/hands.jpg);
+  background-image: url(img/choir.jpg);
   background-size: cover;
 }
 
@@ -202,7 +202,7 @@ h1 {
   border-radius: 0px 150px 150px 150px;
   height: 350px;
   position: relative;
-  background-image: url(img/overnight.jpg);
+  background-image: url(img/overnights.jpg);
   background-size: cover;
 }
 
@@ -233,8 +233,9 @@ h1 {
   border-radius: 150px;
   height: 350px;
   position: relative;
-  background-image: url(img/mens.jpg);
+  background-image: url(img/mens-talk.jpg);
   background-size: cover;
+  background-position: center center;
 }
 
 .mens span {
@@ -250,21 +251,22 @@ h1 {
 .right .supporters {
   height: 220px;
   background: #ACCF9F;
-  border: 2px solid #000000;
   border-radius: 150px 0px 150px 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.supporters p {
-  line-height: 35px;
+  border: 2px solid #000000;
+  position: relative;
+  background-image: url(img/qnandans.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .supporters span {
-  font-size: 25px;
-  font-weight: bold;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px 10px;
+  position: absolute;
+  top: 100px;
+  right: -30px;
 }
 
 .purpose-n-church {
@@ -880,6 +882,18 @@ footer a {
 }
 
 @media screen and (max-width: 933px) {
+  nav.desktop-nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    width: 95%;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .intro, .pnc, .involve section {
     flex-direction: column;
   }
@@ -899,18 +913,6 @@ footer a {
 }
 
 @media screen and (max-width: 674px) {
-  nav.desktop-nav {
-    display: none;
-  }
-
-  nav.mobile-nav {
-    width: 95%;
-    margin: 0 auto 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .purpose, .upcomingevent {
     flex-direction: column;
   }
