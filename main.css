@@ -53,7 +53,7 @@ nav a {
 }
 
 .logo img {
-  width: 90px;
+  width: 100px;
 }
 
 a.active-pg {
@@ -155,15 +155,24 @@ h1 {
   border: 2px solid #000000;
   border-radius: 150px;
   height: 200px;
+  background: url('img/programs1.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .right-programs div.round {
   width: 45%;
+  background: url('img/programs2.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .right-programs div.pointed {
   width: 45%;
   border-radius: 150px 0px 150px 150px;
+  background: url('img/programs3.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .right .groups {
@@ -473,6 +482,18 @@ h4 {
   flex-wrap: wrap;
 }
 
+.pray-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pray-with-us {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .sermon {
   background: #FFF2DD;
   padding: 30px;
@@ -481,6 +502,10 @@ h4 {
   width: 47%;
   align-items: center;
   z-index: 10;
+}
+
+.ytLogo {
+  width: 100px;
 }
 
 .sermon h4 {
@@ -576,12 +601,15 @@ h4 {
 }
 
 .event-marrieds {
-  background-image: url(img/marrieds.jpg);
+  background-image: url(img/Workers.png);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #ACCF9F;
 }
 
 .event-singles {
-  background-image: url(img/singles.jpg);
+  background-image: url(img/harvat1.jpg);
   background-size: cover;
 }
 
@@ -618,7 +646,7 @@ h4 {
 
 .event-about {
   line-height: 30px;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
 }
 
 footer {
