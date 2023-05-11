@@ -5,30 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harvest Teaching Ministries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <nav>
-        <span class="logo">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
           <img src="img/logo.svg" alt="Harvest Logo">
-        </span>
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">Programs</a>
-          <a href="#">Events</a>
-          <a href="#">Bible University</a>
-          <a href="#">Ministries</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 links">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bible University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ministries</a>
+            </li>
+          </ul>
+          <span>
+            <a href="#" class="btn nav-btn" role="button">Give</a>
+          </span>
         </div>
-        <span>
-          <a href="#" class="nav-btn">Give</a>
-        </span>
-        <div class="menu-toggle">
-          <img src="icons/menu.svg" alt="">
-        </div>
-      </nav>
-      <div class="service-content">
+      </div>
+    </nav>
+    <div class="service-content">
+      <div class="container">
         <span class="top">
           <h1 class="title">Join us for our Sunday Service</h1>
           <p>
@@ -37,9 +52,9 @@
           </p>
           <p>
             <span><img src="icons/location.svg" alt=""></span>
-            <span class="info">Makerere Kikoni near Extrene Lounge</span>
+            <span class="info">Makerere Kikoni near Extreme Lounge</span>
           </p>
-      </span>
+        </span>
         <div class="call-to-action">
           <a href="#" class="btn">
             <span><img src="icons/youtube.svg" alt=""></span>
@@ -54,11 +69,135 @@
     </div>
   </header>
   <main>
-    <div></div>
-    <div></div>
+    <section class="latest-features">
+      <div class="container">
+        <h2>Latest Features</h2>
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3 col-3 nav-tabs-bg" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active rounded-0 pll-height" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <img class="label-icon" src="icons/video-square.svg" alt="">
+              <div class="label-pll">
+                <span>Featured Sermon</span>
+                <span class="label-tag">Youtube</span>
+              </div>
+            </button>
+            <button class="nav-link pll-height rounded-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img class="label-icon" src="icons/calendar.svg" alt="">
+              <div class="label-pll">
+                <span>Water Baptisms</span>
+                <span class="label-tag">Events</span>
+              </div>
+            </button>
+            <button class="nav-link pll-height rounded-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+              <img class="label-icon" src="icons/heart.svg" alt="">
+              <div class="label-pll">
+                <span>Welcome Home</span>
+                <span class="label-tag">Connect</span>
+              </div>
+            </button>
+            <button class="nav-link pll-height rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <img class="label-icon" src="icons/global.svg" alt="">
+              <div class="label-pll">
+                <span>Essential Groups</span>
+                <span class="label-tag">Get Involved</span>
+              </div>
+            </button>
+          </div>
+          <div class="tab-content col-9" id="v-pills-tabContent">
+            <div class="tab-pane fade show active rounded-4" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+              <h3>Today's Sermon</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus quam similique amet ab porro ipsa, error, officiis ea aut totam nesciunt unde reiciendis a eligendi maxime ex. Et, odit?</p>
+              <div class="featured-btn">
+                <a href="#" class="btn">
+                  <span><img src="icons/youtube.svg" alt=""></span>
+                  <span>Watch on Youtube</span>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade rounded-4" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+              <h3>Water Baptisms</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus quam similique amet ab porro ipsa, error, officiis ea aut totam nesciunt unde reiciendis a eligendi maxime ex. Et, odit?</p>
+              <div class="featured-btn">
+                <a href="#" class="btn">
+                  <span><img src="icons/camera.svg" alt=""></span>
+                  <span>See Gallery</span>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade rounded-4" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus quam similique amet ab porro ipsa, error, officiis ea aut totam nesciunt unde reiciendis a eligendi maxime ex. Et, odit?</p>
+              <div class="featured-btn">
+                <a href="#" class="btn">
+                  <span><img src="icons/profile-2user.svg" alt=""></span>
+                  <span>Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade rounded-4" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+              <h3>Essential Groups</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus quam similique amet ab porro ipsa, error, officiis ea aut totam nesciunt unde reiciendis a eligendi maxime ex. Et, odit?</p>
+              <div class="featured-btn">
+                <a href="#" class="btn">
+                  <span><img src="icons/book-saved.svg" alt=""></span>
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="leadership text-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 ms-auto leadership-content">
+            <h4>Leadership</h4>
+            <h3>Pastor Gerald Mukuye</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis nemo explicabo 
+              impedit eveniet totam, exercitationem, recusandae perspiciatis sequi sunt placeat 
+              velit incidunt. Dolores corporis soluta itaque praesentium! Quod, optio!
+            </p>
+            <h4 class="fst-italic">Harvest Teaching Ministries Lead Pastor</h4>
+            <div class="leadership-btn">
+              <a href="#" class="btn">
+                <!-- <span><img src="icons/youtube.svg" alt=""></span> -->
+                <span>About Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-features">
+      <div class="container">
+        <h2>Programs and Events</h2>
+      </div>
+    </section>
+    <section class="current-event">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 me-auto current-event-content">
+            <h4>Island Mission 2023</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis nemo explicabo 
+              impedit eveniet totam, exercitationem, recusandae perspiciatis sequi sunt placeat 
+              velit incidunt. Dolores corporis soluta itaque praesentium! Quod, optio!
+            </p>
+            <div class="event-btn">
+              <a href="#" class="btn">
+                <span>Learn More</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div></div>
     <div></div>
   </main>
   <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

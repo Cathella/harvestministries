@@ -1,7 +1,5 @@
 * {
   font-family: 'SansSerif';
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -12,28 +10,6 @@ header {
   background-position: center center;
   color: #fff;
   padding: 0 0 100px 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0 0 0;
-}
-
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 13px 0px;
-  gap: 30px;
-  left: calc(50% - 634px/2 - 0.46px);
-  top: calc(50% - 50px/2);
 }
 
 .links a {
@@ -51,17 +27,11 @@ nav {
   background: #B5BD19;
   border: 2px solid #B5BD19;
   border-radius: 100px;
-  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
-}
-
-.menu-toggle {
-  display: none;
 }
 
 .service-content {
@@ -116,9 +86,24 @@ header p {
   flex-direction: row;
   align-items: flex-start;
   gap: 24px;
+  margin: 20px 0 0 0;
 }
 
-.call-to-action a {
+.featured-btn, .leadership-btn, .event-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.leadership-btn {
+  justify-content: end;
+}
+
+.call-to-action a, 
+.featured-btn a, 
+.leadership-btn a,
+.event-btn a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -134,12 +119,12 @@ header p {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 876px) {
   .container {
     width: 90%;
   }
 
-  .links {
+  .links, .give-btn {
     display: none;
   }
 
@@ -147,6 +132,186 @@ header p {
     display: block;
     cursor: pointer;
   }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .links a {
+    margin: 10px 0;
+  }
+
+  .menu-toggle.active + .links {
+    display: block;
+  }
+} */
+
+/* @media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+} */
+
+/* @media (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+} */
+
+.latest-features {
+  background: #F0E9B0;
+  padding: 150px 0;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #231F20;
+  margin: 0 0 50px 0;
+}
 
+.pll-height {
+  padding: 40px 0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.label-pll {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10;
+}
+
+.label-tag {
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-style: normal;
+}
+
+.label-icon {
+  width: 40px;
+}
+
+.nav-tabs-bg {
+  background: #231F20;
+}
+
+.nav-pills .nav-link.active {
+  background: #B5BD19; /* change to the color of your choice */
+  color: #fff; /* set the text color to ensure contrast */
+}
+
+#v-pills-home, 
+#v-pills-profile, 
+#v-pills-messages, 
+#v-pills-settings {
+  background: #231F20;
+  color: #fff;
+  padding: 200px 70px 40px;
+  height: 506px;
+}
+
+#v-pills-home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/sermon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#v-pills-profile {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/baptism.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-messages {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-settings {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/groups.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-home p, 
+#v-pills-profile p,
+#v-pills-messages p,
+#v-pills-settings p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 29px;
+  color: #ABA7A5;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22.9px;
+  line-height: 32px;
+}
+
+.leadership {
+  padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../img/leadership.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.current-event {
+  padding: 200px 0;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../img/event.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.leadership h4,
+.current-event h4 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.leadership-content,
+.current-event-content {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  gap: 20px;
+}
+
+.leadership-content p,
+.current-event-content p {
+  color: #ABA7A5;
+  font-style: italic;
+  font-size: 14.8px;
+  line-height: 29px;
+}
