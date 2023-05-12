@@ -160,6 +160,17 @@ h2 {
   align-items: center;
 }
 
+.pll-height-3 {
+  padding: 30px 0;
+  font-size: 18px;
+  color: #231F20;
+  text-transform: uppercase;
+}
+
+.bordered-bot {
+  border-bottom: 2px solid #B5BD19;
+}
+
 .label-pll {
   display: flex;
   flex-direction: column;
@@ -541,4 +552,46 @@ header {
 .tag-badge {
   color: #B5BD19;
   font-size: 12px;
+}
+
+.kids-part {
+  background: #231F20;
+  border-radius: 15px;
+  display: flex;
+}
+
+.part-img {
+  width: 50%;
+  height: 400px;
+  border-radius: 15px 0 0 15px;
+  background: url('../img/sunday-school.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.part-details {
+  position: relative;
+  width: 50%;
+}
+
+.part-details .ccc {
+  /* display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center; */
+  padding: 100px 25px;
+}
+
+.part-details h3 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.part-details p {
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
