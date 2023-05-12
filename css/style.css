@@ -576,11 +576,6 @@ header {
 }
 
 .part-details .ccc {
-  /* display: flex;
-  flex-direction: column;
-  background: white;
-  justify-content: center;
-  align-items: center; */
   padding: 100px 25px;
 }
 
@@ -594,4 +589,17 @@ header {
   color: #FFFFFF;
   opacity: 0.6;
   text-transform: uppercase;
+}
+
+nav .nav-link:hover,
+nav .btn:hover {
+  color: white;
+}
+
+nav .btn:hover {
+  border: 2px solid #FFFFFF;
+}
+
+.why-give {
+  font-size: 18px;
 }
