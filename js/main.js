@@ -1,8 +1,38 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const contentWrapper = document.querySelector('.content-wrapper');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
 
-menuToggle.addEventListener('click', () => {
-  console.log('Menu toggle button clicked.');
-  menuToggle.classList.toggle('active');
-  menu.classList.toggle('active');
+let scrollAmount = 0;
+
+nextButton.addEventListener('click', () => {
+  contentWrapper.scrollTo({
+    left: (scrollAmount += 350),
+    behavior: 'smooth',
+  });
+
+  if (scrollAmount > 0) {
+    prevButton.style.visibility = 'visible';
+  }
+
+  if (
+    contentWrapper.scrollWidth - contentWrapper.clientWidth <=
+    scrollAmount
+  ) {
+    nextButton.style.visibility = 'hidden';
+  }
+});
+
+prevButton.addEventListener('click', () => {
+  contentWrapper.scrollTo({
+    left: (scrollAmount -= 350),
+    behavior: 'smooth',
+  });
+
+  if (scrollAmount === 0) {
+    prevButton.style.visibility = 'hidden';
+  }
+
+  if (nextButton.style.visibility === 'hidden') {
+    nextButton.style.visibility = 'visible';
+  }
 });
