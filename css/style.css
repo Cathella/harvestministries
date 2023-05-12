@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
 * {
-  font-family: 'SansSerif';
+  font-family: 'League Spartan', sans-serif;
   box-sizing: border-box;
 }
 
-header {
+header.header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../img/headerbg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +45,7 @@ header {
   margin: 250px 0 0 0;
 }
 
-h1 {
+h1.h1 {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
@@ -121,12 +123,12 @@ header p {
 
 .latest-features {
   background: #F0E9B0;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 23px;
   display: flex;
   align-items: center;
@@ -201,7 +203,7 @@ h2 {
 #v-pills-settings {
   background: #231F20;
   color: #fff;
-  padding: 200px 70px 40px;
+  padding: 160px 70px 40px;
   height: 506px;
 }
 
@@ -240,7 +242,9 @@ h2 {
   font-style: italic;
   font-size: 16px;
   line-height: 29px;
-  color: #ABA7A5;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -285,13 +289,11 @@ h3 {
 
 .leadership-content p,
 .current-event-content p {
-  color: #ABA7A5;
+  color: #FFFFFF;
   font-style: italic;
-  font-size: 14.8px;
+  font-size: 16px;
   line-height: 29px;
 }
-
-
 
 .content-wrapper {
   display: flex;
@@ -372,6 +374,7 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   color: #B5BD19;
+  text-decoration: none;
 }
 
 .card-content-tag {
@@ -453,4 +456,89 @@ h5 {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+}
+
+.watch-card {
+  background-color: #231F20;
+  width: 200px;
+  height: 480px;
+  position: relative;
+  padding: 15px;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.play-btn a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px;
+  border: 1px solid #FFFFFF;
+  background: #B5BD19;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.watch-card a {
+  font-size: 13px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+#card-1 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/vTq6ua80lpY/mqdefault_6s.webp?du=3000&sqp=CIjA96IG&rs=AOn4CLCkX0B0-J1nTxiq7e5oK2Zgspp-hQ');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-2 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/hasB2KAuKN4/mqdefault_6s.webp?du=3000&sqp=CMaZ96IG&rs=AOn4CLBvgy8KIZivWJNL0Y_gHPP7OmtEpQ');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-3 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/agqXZ4kVOXE/mqdefault_6s.webp?du=3000&sqp=COK896IG&rs=AOn4CLDiSt1G44zKcsWXl19UI8_DP1-t9g');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-4 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/IAfyj-Qb0Kg/mqdefault_6s.webp?du=3000&sqp=COCr96IG&rs=AOn4CLDs782a-SUKi-GB4ka7OC0DyzCRIA');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #161415;
+}
+
+.heading-h1 {
+  padding: 70px 0 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.events {
+  background: #F0E9B0;
+  padding: 100px 0;
+}
+
+.upcomingevent {
+  background: #231F20;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.tag-badge {
+  color: #B5BD19;
+  font-size: 12px;
 }
