@@ -603,3 +603,44 @@ nav .btn:hover {
 .why-give {
   font-size: 18px;
 }
+
+.accordion-item {
+  background: transparent;
+  border-color: #231F20;
+}
+
+/* .accordion-item .show {
+  border-color: #231F20;
+} */
+
+.accordion-header .accordion-button {
+  /* font-size: 40px; */
+  padding: 25px 0;
+  font-weight: bold;
+  background: transparent;
+  color: #231F20;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  /* display: flex; */
+  /* align-items: center; */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  /* color: #231F20; */
+  /* margin: 0 0 50px 0; */
+}
+
+.accordion-body {
+  padding: 35px 0;
+  font-size: 20px;
+}
+
+.leader {
+  background: #231F20;
+  color: #FFFFFF;
+}
+
+.green-color {
+  color: #B5BD19;
+}
