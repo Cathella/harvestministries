@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+  font-family: 'League Spartan', sans-serif;
+  box-sizing: border-box;
+}
+
+header.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../img/headerbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  padding: 0 0 100px 0;
+}
+
+.links a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.77778px;
+  text-transform: uppercase;
+  color: #B5BD19;
+  text-decoration: none;
+}
+
+.nav-btn {
+  padding: 10.33px 30px;
+  background: #B5BD19;
+  border: 2px solid #B5BD19;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+  position: relative;
+  margin: 250px 0 0 0;
+}
+
+h1.h1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.4px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+header p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1.77778px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 20px 0 0 0;
+}
+
+.featured-btn, .leadership-btn, .event-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.leadership-btn {
+  justify-content: end;
+}
+
+.call-to-action a, 
+.featured-btn a, 
+.leadership-btn a,
+.event-btn a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 10px;
+  border: 2px solid #B5BD19;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #B5BD19;
+  text-decoration: none;
+}
+
+.latest-features {
+  background: #F0E9B0;
+  padding: 100px 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #231F20;
+  margin: 0 0 50px 0;
+}
+
+.pll-height {
+  padding: 40px 0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pll-height-2 {
+  padding: 45px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pll-height-3 {
+  padding: 30px 0;
+  font-size: 18px;
+  color: #231F20;
+  text-transform: uppercase;
+}
+
+.bordered-bot {
+  border-bottom: 2px solid #B5BD19;
+}
+
+.label-pll {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10;
+}
+
+.label-tag {
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-style: normal;
+}
+
+.label-tag-2 {
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.label-icon {
+  width: 40px;
+}
+
+.label-icon-2 {
+  width: 30px;
+}
+
+.nav-tabs-bg {
+  background: #231F20;
+}
+
+.nav-pills .nav-link.active {
+  background: #B5BD19;
+  color: #fff;
+}
+
+#v-pills-home, 
+#v-pills-profile, 
+#v-pills-messages, 
+#v-pills-settings {
+  background: #231F20;
+  color: #fff;
+  padding: 160px 70px 40px;
+  height: 506px;
+}
+
+#v-pills-home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/sermon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#v-pills-profile {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/baptism.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-messages {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-settings {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../img/groups.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#v-pills-home p, 
+#v-pills-profile p,
+#v-pills-messages p,
+#v-pills-settings p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22.9px;
+  line-height: 32px;
+}
+
+.leadership {
+  padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../img/leadership.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.current-event {
+  padding: 200px 0;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../img/event.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.leadership h4,
+.current-event h4 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.leadership-content,
+.current-event-content {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  gap: 20px;
+}
+
+.leadership-content p,
+.current-event-content p {
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.content-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+}
+
+.content-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 340px;
+  height: 499px;
+  background-color: #231F20;
+  margin-right: 30px;
+  border-radius: 15px;
+  color: white;
+}
+
+#choir-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/choir.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#radio-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/radio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#overnight-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/overnight.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#extension-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/extension.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.scroll-buttons {
+  text-align: center;
+}
+
+.scroll-button {
+  display: inline-block;
+  background-color: #231F20;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.prev-button {
+  visibility: hidden;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-content-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #B5BD19;
+  text-decoration: none;
+}
+
+.card-content-tag {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ABA7A5;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .content-card {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+footer {
+  background: #231F20;
+  color: #FFFFFF;
+  padding: 100px 0;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 29px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.information div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.information a {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.rights {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.watch-card {
+  background-color: #231F20;
+  width: 200px;
+  height: 480px;
+  position: relative;
+  padding: 15px;
+  background-image: url('../img/sale.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-shrink: 0;
+  height: 499px;
+  margin-right: 20px;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.play-btn a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px;
+  /* border: 1px solid #FFFFFF; */
+  background: #B5BD19;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.watch-card a {
+  font-size: 13px;
+  color: #231F20;
+  font-weight: 700;
+}
+
+header {
+  background: #161415;
+}
+
+.heading-h1 {
+  padding: 70px 0 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.events {
+  background: #F0E9B0;
+  padding: 100px 0;
+}
+
+.upcomingevent {
+  background: #231F20;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.tag-badge {
+  color: #B5BD19;
+  font-size: 12px;
+}
+
+.kids-part {
+  background: #231F20;
+  border-radius: 15px;
+  display: flex;
+}
+
+.part-img {
+  width: 50%;
+  height: 400px;
+  border-radius: 15px 0 0 15px;
+  background: url('../img/sunday-school.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.part-details {
+  position: relative;
+  width: 50%;
+}
+
+.part-details .ccc {
+  padding: 100px 25px;
+}
+
+.part-details h3 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.part-details p {
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+nav .nav-link:hover,
+nav .btn:hover {
+  color: white;
+}
+
+nav .btn:hover {
+  border: 2px solid #FFFFFF;
+}
+
+.why-give {
+  font-size: 18px;
+}
+
+.accordion-item {
+  background: transparent;
+  border-color: #231F20;
+}
+
+.accordion-header .accordion-button {
+  /* font-size: 40px; */
+  padding: 25px 0;
+  font-weight: bold;
+  background: transparent;
+  color: #231F20;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  /* display: flex; */
+  /* align-items: center; */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  /* color: #231F20; */
+  /* margin: 0 0 50px 0; */
+}
+
+.accordion-body {
+  padding: 35px 0;
+  font-size: 20px;
+}
+
+.leader {
+  background: #231F20;
+  color: #FFFFFF;
+}
+
+.green-color {
+  color: #B5BD19;
+}
+
+@media screen and (max-width: 992px) {
+  #v-pills-home, 
+  #v-pills-profile, 
+  #v-pills-messages, 
+  #v-pills-settings {
+    padding: 70px 40px 40px;
+  }
+
+  .navbar-toggler {
+    background: wheat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pll-height {
+    flex-direction: column;
+    padding: 34px 0;
+  }
+
+  .label-icon {
+    width: 24px;
+  }
+
+  .label-pll {
+    align-items: center;
+  }
+
+  .label-pll span:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hav-pill-info {
+    flex-direction: column;
+  }
+
+  .tabs-wid-100 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hav-pill-info nav button{
+    flex-grow: 1;
+  }
+
+  .label-tag {
+    display: none;
+  }
+
+  .label-icon {
+    width: 30px;
+  }
+
+  .pll-height {
+    padding: 34px 0 24px;
+  }
+
+  .sm-wrapped {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .call-to-action {
+    flex-direction: column;
+  }
+}
