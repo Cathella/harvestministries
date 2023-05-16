@@ -475,6 +475,13 @@ h5 {
   height: 480px;
   position: relative;
   padding: 15px;
+  background-image: url('../img/sale.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-shrink: 0;
+  height: 499px;
+  margin-right: 20px;
 }
 
 .play-btn {
@@ -491,7 +498,7 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 9px 10px;
-  border: 1px solid #FFFFFF;
+  /* border: 1px solid #FFFFFF; */
   background: #B5BD19;
   border-radius: 100px;
   text-decoration: none;
@@ -499,32 +506,8 @@ h5 {
 
 .watch-card a {
   font-size: 13px;
-  color: #FFFFFF;
+  color: #231F20;
   font-weight: 700;
-}
-
-#card-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/vTq6ua80lpY/mqdefault_6s.webp?du=3000&sqp=CIjA96IG&rs=AOn4CLCkX0B0-J1nTxiq7e5oK2Zgspp-hQ');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#card-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/hasB2KAuKN4/mqdefault_6s.webp?du=3000&sqp=CMaZ96IG&rs=AOn4CLBvgy8KIZivWJNL0Y_gHPP7OmtEpQ');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#card-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/agqXZ4kVOXE/mqdefault_6s.webp?du=3000&sqp=COK896IG&rs=AOn4CLDiSt1G44zKcsWXl19UI8_DP1-t9g');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#card-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://i.ytimg.com/an_webp/IAfyj-Qb0Kg/mqdefault_6s.webp?du=3000&sqp=COCr96IG&rs=AOn4CLDs782a-SUKi-GB4ka7OC0DyzCRIA');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -609,10 +592,6 @@ nav .btn:hover {
   border-color: #231F20;
 }
 
-/* .accordion-item .show {
-  border-color: #231F20;
-} */
-
 .accordion-header .accordion-button {
   /* font-size: 40px; */
   padding: 25px 0;
@@ -643,4 +622,73 @@ nav .btn:hover {
 
 .green-color {
   color: #B5BD19;
+}
+
+@media screen and (max-width: 992px) {
+  #v-pills-home, 
+  #v-pills-profile, 
+  #v-pills-messages, 
+  #v-pills-settings {
+    padding: 70px 40px 40px;
+  }
+
+  .navbar-toggler {
+    background: wheat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pll-height {
+    flex-direction: column;
+    padding: 34px 0;
+  }
+
+  .label-icon {
+    width: 24px;
+  }
+
+  .label-pll {
+    align-items: center;
+  }
+
+  .label-pll span:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hav-pill-info {
+    flex-direction: column;
+  }
+
+  .tabs-wid-100 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hav-pill-info nav button{
+    flex-grow: 1;
+  }
+
+  .label-tag {
+    display: none;
+  }
+
+  .label-icon {
+    width: 30px;
+  }
+
+  .pll-height {
+    padding: 34px 0 24px;
+  }
+
+  .sm-wrapped {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .call-to-action {
+    flex-direction: column;
+  }
 }
