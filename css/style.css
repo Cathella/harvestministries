@@ -133,8 +133,6 @@ header p {
   border: 2px solid #B5BD19;
   border-radius: 100px;
   font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
   color: #B5BD19;
   text-decoration: none;
 }
@@ -363,8 +361,29 @@ h3 {
   background-position: top center;
 }
 
-#extension-bg {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/extension.jpg');
+#last-chance-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/lastchance.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#mid-week-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/mid-week.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#real-men-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/real-men.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#qn-ans-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/qnsandans.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
