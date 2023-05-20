@@ -37,12 +37,13 @@ header.header {
 }
 
 .service-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 45px;
-  position: relative;
-  margin: 250px 0 0 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* gap: 45px; */
+  /* position: relative; */
+  margin: 200px 0 0 0;
 }
 
 h1.h1 {
@@ -52,7 +53,7 @@ h1.h1 {
   display: flex;
   align-items: center;
   letter-spacing: 2.4px;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -63,6 +64,7 @@ header p {
   align-items: center;
   padding: 0px;
   gap: 12px;
+  text-align: center;
 }
 
 .info {
@@ -79,16 +81,32 @@ header p {
 .top {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .call-to-action {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  /* align-items: flex-start; */
   gap: 24px;
-  margin: 20px 0 0 0;
+  margin-top: 30px;
+}
+
+.call-to-action a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #B5BD19;
 }
 
 .featured-btn, .leadership-btn, .event-btn {
@@ -102,7 +120,7 @@ header p {
   justify-content: end;
 }
 
-.call-to-action a, 
+/* .call-to-action a,  */
 .featured-btn a, 
 .leadership-btn a,
 .event-btn a {
