@@ -448,6 +448,23 @@ h3 {
   font-size: 40px;
 }
 
+.mobile-money {
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.mobile-money div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-money img {
+  width: 100px;
+}
+
 @media (max-width: 768px) {
   .content-card {
     width: 250px;
