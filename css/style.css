@@ -109,7 +109,7 @@ header p {
   color: #B5BD19;
 }
 
-.featured-btn, .leadership-btn, .event-btn {
+.featured-btn, .leadership-btn, .event-btn, .joinbtn {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -120,7 +120,7 @@ header p {
   justify-content: end;
 }
 
-/* .call-to-action a,  */
+.joinbtn a, 
 .featured-btn a, 
 .leadership-btn a,
 .event-btn a {
@@ -508,17 +508,28 @@ h5 {
 
 .watch-card {
   background-color: #231F20;
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   position: relative;
   padding: 15px;
-  background-image: url('../img/sale.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   flex-shrink: 0;
-  /* height: 499px; */
+  border-radius: 15px;
   margin-right: 20px;
+}
+
+#card-1 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/youtube-1.jpg');
+}
+
+#card-2 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/youtube-2.jpg');
+}
+
+#card-3 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/choir.jpg');
 }
 
 .play-btn {
@@ -535,7 +546,6 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 9px 10px;
-  /* border: 1px solid #FFFFFF; */
   background: #B5BD19;
   border-radius: 100px;
   text-decoration: none;
@@ -543,7 +553,7 @@ h5 {
 
 .watch-card a {
   font-size: 13px;
-  color: #231F20;
+  color: #FFFFFF;
   font-weight: 700;
 }
 
@@ -630,26 +640,53 @@ nav .btn:hover {
 }
 
 .accordion-header .accordion-button {
-  /* font-size: 40px; */
   padding: 25px 0;
   font-weight: bold;
   background: transparent;
   color: #231F20;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 23px;
-  /* display: flex; */
-  /* align-items: center; */
   letter-spacing: 2.4px;
   text-transform: uppercase;
-  /* color: #231F20; */
-  /* margin: 0 0 50px 0; */
 }
 
 .accordion-body {
   padding: 35px 0;
   font-size: 20px;
+}
+
+.telegram-group {
+  background: #231F20;
+  border-radius: 15px;
+  color: #FFFFFF;
+  display: flex;
+  height: 350px;
+  gap: 30px;
+}
+
+.telegram-group img {
+  width: 150px;
+}
+
+.img-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background: #f6f6f6;
+  border-radius: 15px 0 0 15px;
+}
+
+.join-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.join-txt {
+  font-size: 25px;
 }
 
 .leader {
