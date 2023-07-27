@@ -119,6 +119,7 @@ header p {
   justify-content: end;
 }
 
+.call-to-action a,
 .joinbtn a, 
 .featured-btn a, 
 .leadership-btn a,
@@ -700,6 +701,11 @@ nav .btn:hover {
   display: flex;
   height: 350px;
   gap: 30px;
+}
+
+.tele-social {
+  background: #F0E9B0;
+  padding: 100px 0;
 }
 
 .telegram-group img {
