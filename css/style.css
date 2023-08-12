@@ -230,7 +230,7 @@ h2 {
 #v-pills-settings {
   background: #231F20;
   color: #fff;
-  padding: 160px 70px 40px;
+  padding: 90px 70px 40px;
   height: 506px;
 }
 
@@ -391,6 +391,13 @@ h3 {
 
 #sunday-service-bg {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/sunday-service.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#family-relations-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../img/family-relations.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -770,6 +777,11 @@ nav .btn:hover {
 
   .navbar-toggler {
     background: wheat;
+  }
+
+  .top,
+  .call-to-action {
+    width: 100%;
   }
 }
 
